@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #a39c9c, #fdfdfd, #a39c9c);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.login-container {
+    background: #fdfdfd;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #137913;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login-btn,
+.back-btn {
+    background-color: #137913;
+    color: #fdfdfd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.login-btn::before,
+.back-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #9e9999aa, #409F32, #ffffffaa);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.login-btn:hover::before,
+.back-btn:hover::before {
+    opacity: 1;
+}
+
+.login-btn:hover,
+.back-btn:hover {
+    transform: scale(1.03);
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+}
