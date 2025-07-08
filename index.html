@@ -137,7 +137,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label"> Correo electronico </label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="email">
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label"> Mensaje </label>
@@ -149,9 +149,19 @@
         </section>
     </main>
     <footer>
-        <p> &copy; Equipo Delta || 2025 || RIWI </p>
-        <p> Contacto: --- </p>
-        <p> Ultima modificación: 05/07/2025 </p>
+        <div class="footer-container">
+            <div class="subscribe-container">
+                <h4> Suscribete aquí </h4>
+                <label for="email" class="form-label"> Correo electronico: </label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <button type="submit" class="btn btn-primary"> Enviar </button>
+            </div>
+            <div class="info-container">
+                <p> &copy; Equipo Delta || 2025 || RIWI </p>
+                <p> Contacto: --- </p>
+                <p> Ultima modificación: 07/07/2025 </p>
+            </div>
+        </div>
     </footer>
 
     <!-- SweetAlert2 implementation -->

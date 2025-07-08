@@ -10,27 +10,27 @@
 
 /** RESET **/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /** -------------------------------------------------------------------- **/
 
 /** GLOBAL **/
 main {
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 header {
-    background-color: var(--white);
-    padding: 10px 20px;
-    box-shadow: 0 5px 5px var(--principal-color);
-    border: solid 1px var(--principal-color);
-    font-family: "Nunito", sans-serif;
+  background-color: var(--white);
+  padding: 10px 20px;
+  box-shadow: 0 5px 5px var(--principal-color);
+  border: solid 1px var(--principal-color);
+  font-family: "Nunito", sans-serif;
 }
 
 hr {
@@ -43,58 +43,58 @@ hr {
 }
 
 footer {
-    left: 0;
-    background-color: var(--principal-color);
-    padding: 10px 20px;
-    text-align: center;
-    color: var(--white);
-    text-shadow: 0px 0px 3px var(--black);
+  left: 0;
+  background-color: var(--principal-color);
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 0px 0px 3px var(--black);
 }
 
 /** -------------------------------------------------------------------- **/
 
 /** HEADER **/
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* HEADER LOGO */
 .logo-container img {
-    height: 110px;
-    transition: transform 0.3s ease;
+  height: 110px;
+  transition: transform 0.3s ease;
 }
 .logo-container img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* HEADER TITLE */
 .title-container h1 {
-    margin: 5px;
-    font-size: 32px;
-    font-weight: bold;
-    margin-left: 10px;
-    color: var(--principal-color);
+  margin: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: var(--principal-color);
 }
 
 /* HEADER NAV */
 .nav-container {
-    margin: 5px;
-    display: flex;
-    gap: 15px;
+  margin: 5px;
+  display: flex;
+  gap: 15px;
 }
 .nav-container a {
-    background-color: var(--principal-color);
-    color: var(--white);
-    padding: 8px 14px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+  background-color: var(--principal-color);
+  color: var(--white);
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 .nav-container a:hover {
     background-color: var(--secundary-color);
@@ -102,28 +102,28 @@ footer {
 
 /* HEADER LOGIN-BUTTON */
 .login-a-container a {
-    margin: 5px;
-    background-color: var(--principal-color);
-    color: var(--white);
-    padding: 8px 14px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+  margin: 5px;
+  background-color: var(--principal-color);
+  color: var(--white);
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 .login-a-container a:hover {
-    background-color: var(--secundary-color);
+  background-color: var(--secundary-color);
 }
 
 /** -------------------------------------------------------------------- **/
 
 /** SLOGAN **/
 .slogan-container {
-    text-align: center;
-    padding-top: 10px;
-    margin: 5px;
-    color: var(--principal-color);
-    text-shadow: 0px 0px 2px var(--black);
+  text-align: center;
+  padding-top: 10px;
+  margin: 5px;
+  color: var(--principal-color);
+  text-shadow: 0px 0px 2px var(--black);
 }
 
 /** -------------------------------------------------------------------- **/
@@ -226,16 +226,16 @@ footer {
   box-shadow: 0 5px 15px var(--principal-color);
 }
 .events-container a {
-    background-color: var(--principal-color);
-    color: var(--white);
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+  background-color: var(--principal-color);
+  color: var(--white);
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 .events-container a:hover {
-    background-color: var(--secundary-color);
+  background-color: var(--secundary-color);
 }
 /** -------------------------------------------------------------------- **/
 
@@ -301,6 +301,28 @@ footer {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .contact-form .btn-primary:hover {
+  background-color: var(--secundary-color);
+  border-color: var(--secundary-color);
+}
+
+/** -------------------------------------------------------------------- **/
+
+/** FOOTER CONTAINER **/
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* FOOTER CONTAINER - BUTTON */
+.subscribe-container .btn-primary {
+  margin: 10px;
+  color: var(--black);
+  background-color: var(--white);
+  border-color: var(--white);
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.subscribe-container .btn-primary:hover {
   background-color: var(--secundary-color);
   border-color: var(--secundary-color);
 }
